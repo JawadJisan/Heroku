@@ -120,6 +120,9 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
     res.send('Hello World! RUNNING')
   })
+app.get('/hero', (req, res) => {
+    res.send('Hello World HERO MAKES hero')
+  })
 
   
   app.listen(port, () => {
