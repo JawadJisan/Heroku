@@ -84,7 +84,7 @@ async function run(){
 
         // order collertion API (show orders only the loged user )
         app.get('/order', verifyJWT, async(req, res)=>{
-            const decodedEmail = req.decoded.email;
+            const decodedEmail = req?.decoded?.email;
             const email = req.query.email;
             console.log(email);
             if(email === decodedEmail){
