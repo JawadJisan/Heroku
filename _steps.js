@@ -27,8 +27,11 @@ Update Server with new changes
 
 
 ---------------
-Connect server with client
+Connect server with client and deploy client
 ----------------
+1. Replace localhost by heroku link
+2. npm run build
+3. firebase deploy
 
 
 */
